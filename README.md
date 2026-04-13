@@ -8,11 +8,10 @@ This skill provides a comprehensive guide for using the Claude Code command-line
 
 ## Features
 
-- **Basic Commands**: Interactive sessions, print mode, session management
+- **Basic Commands**: Print mode, authentication
 - **CLI Flags**: Common flags, permission flags, output flags, MCP flags
 - **Common Workflows**: Code review, refactoring, debugging, test generation, Git operations, documentation
-- **Best Practices**: Small and incremental tasks, context management, project configuration
-- **Environment Adaptation**: Examples for Bash, PowerShell, Python, Node.js
+- **Best Practices**: Small and incremental tasks, context management, CLAUDE.md configuration
 
 ## Prerequisites
 
@@ -22,13 +21,7 @@ This skill provides a comprehensive guide for using the Claude Code command-line
 ## Quick Start
 
 ```bash
-# Interactive session
-claude
-
-# With initial prompt
-claude "Explain this code"
-
-# Print mode (recommended for scripts)
+# Print mode (required for agents/scripts)
 claude -p "Your query here"
 ```
 
@@ -57,29 +50,6 @@ claude-code-CLI-SKILL/
 | Debugging | `claude -p "Debug this error"` | Fix bugs |
 | Test Generation | `claude -p "Write tests for this"` | Improve coverage |
 | Git Operations | `claude -p "Write commit message"` | Standardize commits |
-
-## Integration Examples
-
-### Python
-
-```python
-import subprocess
-
-result = subprocess.run(
-    ["claude", "-p", "Explain this function"],
-    capture_output=True,
-    text=True
-)
-print(result.stdout)
-```
-
-### Node.js
-
-```javascript
-const { execSync } = require('child_process');
-const result = execSync('claude -p "Explain this function"', { encoding: 'utf-8' });
-console.log(result);
-```
 
 ## Documentation Languages
 
