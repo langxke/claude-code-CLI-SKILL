@@ -1,17 +1,23 @@
 # Claude Code CLI Skill
 
+[English](./README.md) | [中文](./README_zh.md)
+
+---
+
 适用于任何 AI Agent 环境的通用 Claude Code CLI 调用技能。
 
 ## 概述
 
-本技能提供 Claude Code 命令行工具的完整使用指南，涵盖基础命令、常用开发工作流和最佳实践，帮助 AI 智能体有效地使用 Claude Code 完成各种编程任务。
+本技能提供 Claude Code 命令行工具的完整使用指南，帮助 AI 智能体有效地使用 Claude Code 完成编程任务。参考了 [Claude Code 官方文档](https://code.claude.com/docs/zh-CN/overview) 和 Claude Code 橙皮书。
 
 ## 功能特点
 
-- **基础命令**：打印模式、认证
-- **CLI 标志**：常用标志、权限标志、输出标志、MCP 标志
-- **常用工作流**：代码审查、重构、调试、测试生成、Git 操作、文档生成
-- **最佳实践**：小步快跑、上下文管理、CLAUDE.md 配置
+- **CLAUDE.md 指南**：完整的层级结构、内容指南、自动记忆及实用示例
+- **基础命令**：打印模式、认证、常用 CLI 标志
+- **高级功能**：结构化输出、JSON Schema、流式传输、自动批准工具、自定义系统提示
+- **Plan 模式**：复杂任务的先规划后执行工作流
+- **Git Worktrees**：隔离环境下的并行任务执行
+- **最佳实践**：编写后测试、上下文管理
 
 ## 前置要求
 
@@ -35,21 +41,11 @@ claude -p "你的查询"
 
 ```
 claude-code-CLI-SKILL/
-├── SKILL.md       # 英文版
-├── SKILL_zh.md    # 中文版
-├── README.md      # 英文说明
-└── README_zh.md   # 中文说明
+├── SKILL.md      # 英文版
+├── SKILL_zh.md  # 中文版
+├── README.md    # 英文说明
+└── README_zh.md # 中文说明
 ```
-
-## 常用工作流
-
-| 工作流 | 命令示例 | 使用场景 |
-|--------|----------|----------|
-| 代码审查 | `claude -p "Review this code"` | 合并前检查 |
-| 代码重构 | `claude -p "Refactor this function"` | 改善代码结构 |
-| 调试排查 | `claude -p "Debug this error"` | 修复 bug |
-| 测试生成 | `claude -p "Write tests for this"` | 提高覆盖率 |
-| Git 操作 | `claude -p "Write commit message"` | 规范化提交 |
 
 ## 文档版本
 
@@ -67,3 +63,5 @@ MIT
 ## 参考资料
 
 - [Claude Code 官方文档](https://code.claude.com/docs/zh-CN/overview)
+- [Claude Code CLI 参考](https://code.claude.com/docs/zh-CN/headless)
+- [Claude Code 橙皮书](https://my.feishu.cn/wiki/JK1WwrRgJiYfRok7YxxceS5qn1J)

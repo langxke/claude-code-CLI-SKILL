@@ -1,17 +1,23 @@
 # Claude Code CLI Skill
 
+[English](./README.md) | [中文](./README_zh.md)
+
+---
+
 A universal skill for invoking Claude Code CLI in any AI agent environment.
 
 ## Overview
 
-This skill provides a comprehensive guide for using the Claude Code command-line tool. It covers basic commands, common development workflows, and best practices that help AI agents effectively use Claude Code for various programming tasks.
+This skill provides a comprehensive guide for using Claude Code command-line tool, helping AI agents effectively use Claude Code for programming tasks. It references the [Claude Code Official Documentation](https://code.claude.com/docs/en/overview) and the Claude Code Orange Book.
 
 ## Features
 
-- **Basic Commands**: Print mode, authentication
-- **CLI Flags**: Common flags, permission flags, output flags, MCP flags
-- **Common Workflows**: Code review, refactoring, debugging, test generation, Git operations, documentation
-- **Best Practices**: Small and incremental tasks, context management, CLAUDE.md configuration
+- **CLAUDE.md Guide**: Complete guide with hierarchy structure, content guidelines, Auto Memory, and practical examples
+- **Basic Commands**: Print mode, authentication, common CLI flags
+- **Advanced Features**: Structured output, JSON Schema, streaming, auto-approve tools, custom system prompts
+- **Plan Mode**: Plan-then-execute workflow for complex tasks
+- **Git Worktrees**: Parallel task execution with isolated environments
+- **Best Practices**: Testing after implementation, context management
 
 ## Prerequisites
 
@@ -36,20 +42,10 @@ Copy the `SKILL.md` file to your agent's skill directory. The agent will automat
 ```
 claude-code-CLI-SKILL/
 ├── SKILL.md       # English version
-├── SKILL_zh.md    # Chinese version
-├── README.md      # This file
-└── README_zh.md   # Chinese README
+├── SKILL_zh.md   # Chinese version
+├── README.md     # English README
+└── README_zh.md # Chinese README
 ```
-
-## Common Workflows
-
-| Workflow | Command | Use Case |
-|----------|---------|----------|
-| Code Review | `claude -p "Review this code"` | Pre-merge checks |
-| Refactoring | `claude -p "Refactor this function"` | Improve code structure |
-| Debugging | `claude -p "Debug this error"` | Fix bugs |
-| Test Generation | `claude -p "Write tests for this"` | Improve coverage |
-| Git Operations | `claude -p "Write commit message"` | Standardize commits |
 
 ## Documentation Languages
 
@@ -67,3 +63,5 @@ Contributions are welcome! Please feel free to submit issues or pull requests.
 ## Reference
 
 - [Claude Code Official Documentation](https://code.claude.com/docs/en/overview)
+- [Claude Code CLI Reference](https://code.claude.com/docs/en/headless)
+- [Claude Code Orange Book](https://my.feishu.cn/wiki/JK1WwrRgJiYfRok7YxxceS5qn1J)
